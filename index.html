@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Organizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Event Organizer</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#create-event">Create Event</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to Event Organizer</h2>
+            <h3>Plan, promote, and manage your events effortlessly.</h3>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <div id="events-list">
+                <div class="event">
+                    <h3>Tech Feast</h3>
+                    <p>Date: 2024-07-01</p>
+                    <p>Location: City Hall</p>
+                    <p>Description: Know about latest technology and artificial intelligence.</p>
+                </div>
+                <div class="event">
+                    <h3>Event Name 2</h3>
+                    <p>Date: 2024-08-15</p>
+                    <p>Location: Community Center</p>
+                    <p>Description: A brief description of the event.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Create Event Section -->
+        <section id="create-event">
+            <h2>Create a New Event</h2>
+            <form id="create-event-form">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" required>
+                
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+                
+                <label for="event-location">Event Location:</label>
+                <input type="text" id="event-location" name="event-location" required>
+                
+                <label for="event-description">Event Description:</label>
+                <textarea id="event-description" name="event-description" required></textarea>
+                
+                <button type="submit">Create Event</button>
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Organizer. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
